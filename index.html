@@ -13,18 +13,20 @@
 <body>
     <div class="container">
         <div class="signUp  w-50  mx-auto mt-5" id="signUp">
-            <form class="sign-form" id="sign-form" onsubmit="confirmation(event)">
-                <h1 class="sign-title text-center">Create an account</h1>
-                <div class="input-wrapper border border-secondary p-3">
+            <form class="sign-form " id="sign-form" onsubmit="confirmation(event)">
+                <fieldset class="border rounded-3 p-3">
+                    <legend class="float-none w-auto p-2 sign-title text-center">Create an account</legend>
                     <label for="inputEmail" class="form-label">Email (required)</label>
                     <input type="email" class="form-control" id="inputEmail" required>
-                    <label for="inputPassword4" class="form-label">Password (required)</label>
+                    <label for="inputPassword" class="form-label">Password (required)</label>
                     <input type="password" class="form-control" id="inputPassword" required>
-                </div>
+                
                 <input type="submit" value="Submit"
                     class="btn btn-outline-dark mt-2 offset-md-5 shadow p-2 mb-5 rounded" />
+                </fieldset>
             </form>
         </div>
+
     </div>
     <script src="index.js"></script>
 </body>
